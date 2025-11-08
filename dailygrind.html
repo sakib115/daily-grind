@@ -3,9 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Daily Grind</title>
+    <style>
+        header {
+            height: 50px;
+            background-color: #4A2C2A;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 50px;
+            color: white;
+        }
+        .buttons{
+            display: flex;
+            gap: 20px;
+        }
+        .buttons button{
+            background-color: transparent;
+            border: none;
+            border-bottom: 2px solid transparent;
+            cursor: pointer;
+            padding-bottom: 5px;
+            font-size: 16px;
+            color: white;
+        }
+        .buttons button:hover {
+            border-bottom: 2px solid wheat;
+        }
+        main{
+            height: 60vh;
+            padding: 50px 5vw;
+            background-image: url(https://fikacoffee.com/cdn/shop/files/39-FikaCollection2.jpg?v=1750272560);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        .mainContent{
+            border: 2px solid white;
+            text-align: center;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .mainContent h1{
+            color: white;
+            font-size: 60px;
+            text-shadow: 2px 2px black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .mainContent h2{
+            color: white;
+            font-weight: 300;
+            font-size: 30px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-shadow: 2px 2px black;
+        }
+        .mainContent button{
+            background-color: #4A2C2A;
+            cursor: pointer;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100px;
+        }
+        /* .inline{
+            display: inline-block;
+        } */
+        /* .buttons{
+            margin-right: 50px;
+        } */
+    </style>
 </head>
 <body>
-    Hello world
+    <header>
+        <div class="inline">
+            <H1>Cofee Grind</H1>
+        </div>
+        <div class="inline buttons">
+            <button>Menu</button>
+            <button>About</button>
+            <button>Contact</button>
+        </div>
+    </header>
+    <main>
+        <div class="mainContent">
+            <h1>Crafted with passion</h1>
+            <h2>Experience the art of coffee.</h2>
+            <button> See Menu</button>
+        </div>
+    </main>
 </body>
 </html>
